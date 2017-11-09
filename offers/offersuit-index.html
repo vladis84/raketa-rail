@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ракета. Центр управления поездками.</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header logo-ru">
+            <div class="information pull-right">
+                <b>Тестов Тест Тестович:</b>
+                <a href="/ru/auth/logout">Выход</a>
+                <br>Компания: IBC Corporate Travel
+                <br>Сегодня: Вторник, 21 июня 2016
+                <br>
+            </div>
+        </div>
+        <menu class="top">
+            <div class="main has-sub-menu">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active">
+                        <a href="/ru/search">
+                            Подборка офферов </a>
+                    </li>
+                    <li class="">
+                        <a href="/ru/search">
+                            Бронирование </a>
+                    </li>
+                    <li class="">
+                        <a href="/ru/Company/View">
+                            Компания </a>
+                    </li>
+                    <li class="">
+                        <a href="/ru/service">
+                            Заказы </a>
+                    </li>
+                    <li class="">
+                        <a href="/ru/cart">
+                            Корзина </a>
+                    </li>
+                    <li class="">
+                        <a href="/ru/help/faq">
+                            Помощь </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="second-menu">
+                <li class="item active">
+                    <a href="offersuit-index.html">Все</a>
+                </li>
+                <li class="item">
+                    <a href="offersuit-view.html">Демо оффер</a>
+                </li>
+            </ul>
+        </menu>
+    </div>
+
+    <div class="container offers-container">
+
+        <div class="page-header page-header-thin offers-header">
+            <div class="media">
+                <div class="media-body">
+                    <h1 class="title">
+                        Все предложения
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--BEGIN offersuit-index.html-->
+
+    <div class="container company-container">
+        <div class="panel panel-default">
+
+            <div class="panel-heading panel-heading-controls">
+                <div class="row">
+                    <div class="pull-left col-xs-3">
+                        <button class="js-btn-create-offer btn btn-primary">
+                            <i class="fa fa-plus"></i>
+                            &nbsp; Новое предложение
+                        </button>
+                    </div>
+
+                    <!--поиск в первой реализации не используется-->
+
+                    <!--<div class="pull-right col-xs-4">-->
+                    <!--<label class="sr-only" for="offerSuitSearch">Найти предложение и сделать активным</label>-->
+                    <!--<input type="text" class="form-control" id="offerSuitSearch" autofocus="autofocus"-->
+                    <!--placeholder="Найти предложение и сделать активным"-->
+                    <!--aria-label="Найти предложение и сделать активным">-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <table class="company-table table table-hover">
+                <thead>
+                    <tr>
+                        <td class="sortable active">
+                            <a href="#">
+                                Дата создания &nbsp;
+                                <i class="fa rkt-sort-desc"></i>
+                            </a>
+                        </td>
+                        <td>Путешественник(и)</td>
+                        <td>Номер</td>
+                        <td>Название</td>
+                        <td>Офферы в подборке</td>
+                        <td>Инициатор</td>
+                        <td class="empty">
+                            <!-- Controls -->
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="is-checked">
+                        <td>14.02.2016</td>
+                        <td>
+                            Степанов С.Л.
+                            <br> Леонтьев И.И.
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">345</a>
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">
+                                Для Иванова. Поездка в Москву
+                            </a>
+                        </td>
+                        <td>
+                            Авиабилеты
+                            <b>10</b>, ЖД Билеты
+                            <b>6</b>, Отели
+                            <b>4</b>
+                        </td>
+                        <td>
+                            Иванов И.А.
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sexy active btn-sm">
+                                <i class="fa fa-pause-circle fa-lg"></i>
+                            </button>
+                            <a href="#" data-confirm-href="#remove1" class="js-btn-delete-suite btn btn-sm btn-white">
+                                <i class="fa rkt-bin fa-lg"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.02.2016</td>
+                        <td>
+                            Степанов С.Л.
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">300</a>
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">Для Иванова. Поездка в Москву</a>
+                        </td>
+                        <td>
+                            Авиабилеты
+                            <b>8</b>
+                        </td>
+                        <td>
+                            Иванов И.А.
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sm btn-white">
+                                <i class="fa fa-play-circle fa-lg"></i>
+                            </button>
+                            <a href="#" data-confirm-href="#remove2" class="js-btn-delete-suite btn btn-sm btn-white">
+                                <i class="fa rkt-bin fa-lg"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12.02.2016</td>
+                        <td>
+                            Степанов С.Л.
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">299</a>
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">Для Иванова. Поездка в Москву</a>
+                        </td>
+                        <td>
+                            Авиабилеты
+                            <b>10</b>, ЖД Билеты
+                            <b>6</b>
+                        </td>
+                        <td>
+                            Иванов И.А.
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sm btn-white">
+                                <i class="fa fa-play-circle fa-lg"></i>
+                            </button>
+                            <a href="#" data-confirm-href="#remove3" class="js-btn-delete-suite btn btn-sm btn-white">
+                                <i class="fa rkt-bin fa-lg"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14.02.2016</td>
+                        <td>
+                            Степанов С.Л.
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">287</a>
+                        </td>
+                        <td>
+                            <a href="offersuit-view.html">Для Иванова. Поездка в Москву</a>
+                        </td>
+                        <td>
+                            Авиабилеты
+                            <b>2</b>, Отели
+                            <b>2</b>
+                        </td>
+                        <td>
+                            Иванов И.А.
+                        </td>
+                        <td class="actions">
+                            <button class="btn btn-sm btn-white">
+                                <i class="fa fa-play-circle fa-lg"></i>
+                            </button>
+                            <a href="#" data-confirm-href="#remove4" class="js-btn-delete-suite btn btn-sm btn-white">
+                                <i class="fa rkt-bin fa-lg"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="panel-footer panel-footer-tiny"></div>
+
+        </div>
+
+    </div>
+
+    <!--END offersuit-index.html-->
+
+
+    <div class="container">
+        <div class="footer">
+            <ul class="link_list">
+                <li>
+                    <a href="/ru/article/about">
+                        О Ракете </a>
+                </li>
+                <li>
+                    <a href="/ru/news">
+                        Новости и спецпредложения </a>
+                </li>
+                <li>
+                    <a href="http://ct.ibc.ru/contacts" target="_blank">
+                        Контактная информация </a>
+                </li>
+                <li>
+                    <a href="/ru/article/user_agreement">
+                        Пользовательское соглашение </a>
+                </li>
+                <li>
+                    <a href="/ru/help/faq">
+                        Помощь </a>
+                </li>
+            </ul>
+            <div class="copyleft">
+                &#169; «Система онлайн бронирования IBC Corporate Travel», 2013
+            </div>
+            <div class="copyleft">
+                Все права защищены
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/assets/theme_ibc-882adcb794ef41f032bc.css">
+</body>
+</html>
