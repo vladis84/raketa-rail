@@ -1,67 +1,88 @@
 <!doctype html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ракета. Центр управления поездками.</title>
-    <link rel="stylesheet" href="/assets/theme_ibc-882adcb794ef41f032bc.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ракета. Центр управления поездками.</title>
+        <link rel="stylesheet" href="/assets/theme_ibc-882adcb794ef41f032bc.css">
+        <link rel="stylesheet" href="/assets/rail.css">
+    </head>
 
-<body>
-    <div class="container">
-        <div class="header logo-ru">
-            <div class="information pull-right">
-                <b>Тестов Тест Тестович:</b>
-                <a href="/ru/auth/logout">Выход</a>
-                <br>Компания: IBC Corporate Travel
-                <br>Сегодня: Вторник, 21 июня 2016
-                <br>
+    <body>
+        <div class="container">
+            <div class="header logo-ru">
+                <div class="information pull-right">
+                    <b>Тестов Тест Тестович:</b>
+                    <a href="/ru/auth/logout">Выход</a>
+                    <br>Компания: IBC Corporate Travel
+                    <br>Сегодня: Вторник, 21 июня 2016
+                    <br>
+                </div>
             </div>
-        </div>
-        <menu class="top">
-            <div class="main has-sub-menu">
-                <ul class="nav nav-pills nav-justified">
-                    <li class="active">
-                        <a href="/ru/search"> Бронирование </a>
-                    </li>
-                    <li class="">
-                        <a href="/ru/Company/View">Компания</a>
-                    </li>
-                    <li class="">
-                        <a href="/ru/service">Заказы </a>
-                    </li>
-                    <li class="">
-                        <a href="/ru/cart">
-                            Корзина </a>
-                    </li>
-                    <li class="">
-                        <a href="/ru/help/faq">
-                            Помощь </a>
+            <menu class="top">
+                <div class="main has-sub-menu">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active">
+                            <a href="/ru/search"> Бронирование </a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/Company/View">Компания</a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/service">Заказы </a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/cart">
+                                Корзина </a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/help/faq">
+                                Помощь </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="second-menu">
+                    <li class="item active">
+                        <a href="offersuit-index.html">Ж/Д билет</a>
                     </li>
                 </ul>
-            </div>
-            <ul class="second-menu">
-                <li class="item active">
-                    <a href="offersuit-index.html">Ж/Д билет</a>
-                </li>
-            </ul>
-        </menu>
-    </div>
-    <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading panel-heading-controls">
-                <span class="title text-bold">Ж/Д билет</span>
-                <button class="btn btn-white">
-                    <i class="fa fa-"></i>
-                    Инструкция
-                </button>
-                <button class="btn btn-white">
-                    <i class="fa fa-"></i>
-                    Правила оформления
-                </button>
+            </menu>
+        </div>
+        <div class="container rail-container">
+            <div class="panel panel-default rail-header">
+                <div class="panel-heading">
+                    <h2>Ж/Д билет</h2>
+                    <div class="help-block text-right">
+                        <a class="btn btn-white">
+                            <i class="fa fa-"></i>
+                            Инструкция
+                        </a>
+                        <a class="btn btn-white">
+                            <i class="fa fa-"></i>
+                            Правила оформления
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="departure">
+                        <label for="departure">Откуда</label>
+                        <input type="text" name="departure" id="departure" class="form-control">
+                    </div>
+                    <div class="arrival">
+                        <label for="arrival">Куда</label>
+                        <input type="text" name="arrival" id="arrival" class="form-control">
+                    </div>
+                    <div class="departure-date">
+                        <label for="departure-date">Дата отправления</label>
+                        <input type="text" name="departure-date" id="departure-date" class="form-control">
+                    </div>
+                    <div class="interval">
+                        <label for="">Интервал времени <a>отправления</a></label>
+                        <input type="text" name="arrival" class="form-control">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

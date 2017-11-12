@@ -1,0 +1,54 @@
+@import "_variables.scss";
+
+.rail-container {
+    .panel-heading, .panel-body {
+        padding: 10px 20px;
+        display: flex;
+    }
+    h2 {
+        margin: 0;
+    }
+}
+
+.rail-header {
+    .panel-heading {
+        justify-content: space-between;
+        align-items: center;
+        .help-block {
+            margin: 0;
+            .btn {
+                margin-right: 10px;
+            }
+            .btn:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .panel-body {
+        align-items: center;
+        div {
+            margin-right: 10px;
+        }
+        div:last-child {
+            margin-right: 0;
+        };
+        label {
+            display: block;
+        }
+        .departure {
+            width: 336px;
+        }
+        .departure-date {
+            width: 204px;
+        }
+        .arrival {
+            width: 336px;
+        }
+        .interval {
+            width: 260px;
+        }
+    }
+
+
+}
