@@ -52,7 +52,7 @@
             <div class="panel panel-default rail-header">
                 <div class="panel-heading">
                     <h2>Ж/Д билет</h2>
-                    <div class="help-block text-right">
+                    <div class="button-block">
                         <a class="btn btn-white">
                             <i class="fa fa-"></i>
                             Инструкция
@@ -64,21 +64,35 @@
                     </div>
                 </div>
                 <div class="panel-body">
-                    <div class="departure">
-                        <label for="departure">Откуда</label>
-                        <input type="text" name="departure" id="departure" class="form-control">
+                    <div class="control-block">
+                        <div class="departure">
+                            <label for="departure">Откуда</label>
+                            <input type="text" name="departure" id="departure" class="form-control" value="Омск">
+                        </div>
+                        <div class="arrival">
+                            <label for="arrival">Куда</label>
+                            <input type="text" name="arrival" id="arrival" class="form-control" value="Екатеринбург">
+                        </div>
+                        <div class="departure-date">
+                            <label for="departure-date">Дата отправления</label>
+                            <input type="text" name="departure-date" id="departure-date" class="form-control picker" value="21.10.2017">
+                        </div>
+                        <div class="interval">
+                            <label>Интервал времени <a>отправления</a></label>
+                            <input type="hidden" id="interval-type" name="interval-type" value="departure">
+                            <select name="interval-start" id="interval-start" class="form-control">
+                                <option value="">От 0 ч.</option>
+                            </select>
+                            <select name="interval-end" id="interval-end" class="form-control">
+                                <option value="">До 24 ч.</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="arrival">
-                        <label for="arrival">Куда</label>
-                        <input type="text" name="arrival" id="arrival" class="form-control">
-                    </div>
-                    <div class="departure-date">
-                        <label for="departure-date">Дата отправления</label>
-                        <input type="text" name="departure-date" id="departure-date" class="form-control">
-                    </div>
-                    <div class="interval">
-                        <label for="">Интервал времени <a>отправления</a></label>
-                        <input type="text" name="arrival" class="form-control">
+                    <div class="text-right">
+                        <button class="btn btn-white">
+                            <i class="fa fa-"></i>
+                            Найти
+                        </button>
                     </div>
                 </div>
             </div>
