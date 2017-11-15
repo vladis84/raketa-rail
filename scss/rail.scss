@@ -44,16 +44,16 @@
             font-weight: bold;
         }
         .departure {
-            flex-basis: 336px;
+            width: 336px;
         }
         .departure-date {
-            flex-basis: 204px;
+            width: 204px;
         }
         .arrival {
-            flex-basis: 336px;
+            width: 336px;
         }
         .interval {
-            flex-basis: 270px;
+            width: 270px;
             select {
                 width: 48%;
                 display: inline-block;
