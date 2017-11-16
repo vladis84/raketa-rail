@@ -43,17 +43,14 @@
         input, select {
             font-weight: bold;
         }
-        .departure {
-            width: 336px;
+        .departure, .arrival {
+            flex-basis: 35%;
         }
         .departure-date {
-            width: 204px;
-        }
-        .arrival {
-            width: 336px;
+            min-width: 204px;
         }
         .interval {
-            width: 270px;
+            min-width: 270px;
             select {
                 width: 48%;
                 display: inline-block;
