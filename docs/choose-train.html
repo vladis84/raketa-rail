@@ -49,7 +49,7 @@
             </menu>
         </div>
         <div class="container rail-container">
-            <div class="panel panel-default rail-header">
+            <div class="panel panel-default rail-search-block">
                 <div class="panel-heading">
                     <h2>Ж/Д билет</h2>
                     <div class="button-block">
@@ -64,11 +64,12 @@
                     </div>
                 </div>
                 <div class="panel-body">
-                    <form action="" method="GET">
+                    <form action="choose-train.html" method="GET">
                         <div class="control-block">
                             <div class="departure">
                                 <label for="departure">Откуда</label>
-                                <input type="text" name="departure" id="departure" class="form-control" value="Омск">
+                                    <input type="text" name="departure" id="departure" class="form-control" value="Омск">
+                                    <i class="fa rkt-exchange-h"></i>
                             </div>
                             <div class="arrival">
                                 <label for="arrival">Куда</label>
@@ -100,44 +101,38 @@
             </div>
         </div>
         <div class="container rail-container">
-            <div class="panel panel-default rail-header">
+            <div class="panel panel-default rail-choose-train">
                 <div class="panel-heading">
                     <h2>Шаг 1 из 3. Выберите поезд</h2>
                     <span class="text-muted">Доступно 25 вариантов</span>
                 </div>
                 <div class="panel-body">
-                    <form action="/choose-train.html" method="GET">
-                        <div class="control-block">
-                            <div class="departure">
-                                <label for="departure">Откуда</label>
-                                <input type="text" name="departure" id="departure" class="form-control" value="Омск">
-                            </div>
-                            <div class="arrival">
-                                <label for="arrival">Куда</label>
-                                <input type="text" name="arrival" id="arrival" class="form-control" value="Екатеринбург">
-                            </div>
-                            <div class="departure-date">
-                                <label for="departure-date">Дата отправления</label>
-                                <input type="text" name="departure-date" id="departure-date" class="form-control picker" value="21.10.2017">
-                            </div>
-                            <div class="interval">
-                                <label>Интервал времени <a>отправления</a></label>
-                                <input type="hidden" id="interval-type" name="interval-type" value="departure">
-                                <select name="interval-start" id="interval-start" class="form-control">
-                                    <option value="">От 0 ч.</option>
-                                </select>
-                                <select name="interval-end" id="interval-end" class="form-control">
-                                    <option value="">До 24 ч.</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="text-right">
-                            <button class="btn btn-white" type="submit">
-                                <i class="fa fa-"></i>
-                                Найти
-                            </button>
-                        </div>
-                    </form>
+                    <div>Поезд</div>
+                    <div class="sortable">
+                        Отправление
+                        <i aria-hidden="true" class="fa rkt-sort"></i>
+                    </div>
+                    <div class="sortable">
+                        В пути
+                        <i aria-hidden="true" class="fa rkt-sort"></i>
+                    </div>
+                    <div class="sortable">
+                        Прибытие
+                        <i aria-hidden="true" class="fa rkt-sort"></i>
+                    </div>
+                    <div>Класс</div>
+                    <div>Места</div>
+                    <div class="sortable">
+                        Стоимость
+                        <i aria-hidden="true" class="fa rkt-sort"></i>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="panel-body">
+                    df
+                </div>
+                <div class="panel-body">
+                    df
                 </div>
             </div>
         </div>

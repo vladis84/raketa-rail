@@ -1,0 +1,23 @@
+{
+  "name": "raketa-rail-html",
+  "version": "1.0.0",
+  "description": "1. [Форма поиска](https://vladis84.github.io/raketa.rail.html) 1. [Выбор поезда](https://vladis84.github.io/raketa.rail.html/choose-train.html)",
+  "main": "index.js",
+  "dependencies": {
+    "pikaday": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladis84/raketa-rail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladis84/raketa-rail/issues"
+  },
+  "homepage": "https://github.com/vladis84/raketa-rail#readme"
+}

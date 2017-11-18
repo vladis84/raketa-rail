@@ -7,10 +7,15 @@
     h2 {
         margin: 0;
     }
+    .sortable {
+        cursor: pointer;
+    }
+    .sortable:hover {
+        color: $raketa-brand-color;
+    }
 }
 
-
-.rail-header {
+.rail-search-block {
 
     .panel-heading {
         display: flex;
@@ -44,13 +49,18 @@
             font-weight: bold;
         }
         .departure, .arrival {
-            flex-basis: 35%;
+            flex: 1 1 auto;
+        }
+        .departure {
+            position: relative;
         }
         .departure-date {
-            min-width: 204px;
+            flex: 0 1 auto;
+            width: 204px;
         }
         .interval {
-            min-width: 270px;
+            flex: 0 1 auto;
+            width: 270px;
             select {
                 width: 48%;
                 display: inline-block;
@@ -59,5 +69,31 @@
                 margin-left: 2%;
             }
         }
+        .rkt-exchange-h {
+            color: $raketa-brand-color;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+        }
+    }
+}
+
+.rail-choose-train {
+    .panel-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .panel-body {
+        border-bottom: 1px solid $base-Fa;
+        display: flex;
+    }
+    .panel-body:last-child {
+        border-bottom: none;
+    }
+    
+    .train-description {
+
     }
 }
