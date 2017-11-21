@@ -68,8 +68,8 @@
                         <div class="control-block">
                             <div class="departure">
                                 <label for="departure">Откуда</label>
-                                    <input type="text" name="departure" id="departure" class="form-control" value="Омск">
-                                    <i class="fa rkt-exchange-h"></i>
+                                <input type="text" name="departure" id="departure" class="form-control" value="Омск">
+                                <i class="fa rkt-exchange-h"></i>
                             </div>
                             <div class="arrival">
                                 <label for="arrival">Куда</label>
@@ -106,33 +106,55 @@
                     <h2>Шаг 1 из 3. Выберите поезд</h2>
                     <span class="text-muted">Доступно 25 вариантов</span>
                 </div>
-                <div class="panel-body">
-                    <div>Поезд</div>
-                    <div class="sortable">
-                        Отправление
-                        <i aria-hidden="true" class="fa rkt-sort"></i>
+                <div class="train-box  train-header">
+                    <div class="train-row">
+                        <div class="train-name">Поезд</div>
+                        <div class="sortable train-departure">
+                            Отправление
+                            <i aria-hidden="true" class="fa rkt-sort"></i>
+                        </div>
+                        <div class="sortable train-duration">
+                            В пути
+                            <i aria-hidden="true" class="fa rkt-sort"></i>
+                        </div>
+                        <div class="sortable train-arrival">
+                            Прибытие
+                            <i aria-hidden="true" class="fa rkt-sort"></i>
+                        </div>
+                        <div class="train-class">Класс</div>
+                        <div class="train-seats">Места</div>
+                        <div class="sortable train-price">
+                            Стоимость
+                            <i aria-hidden="true" class="fa rkt-sort"></i>
+                        </div>
+                        <div class="train-policy">f</div>
+                        <div class="train-buttons"></div>
                     </div>
-                    <div class="sortable">
-                        В пути
-                        <i aria-hidden="true" class="fa rkt-sort"></i>
-                    </div>
-                    <div class="sortable">
-                        Прибытие
-                        <i aria-hidden="true" class="fa rkt-sort"></i>
-                    </div>
-                    <div>Класс</div>
-                    <div>Места</div>
-                    <div class="sortable">
-                        Стоимость
-                        <i aria-hidden="true" class="fa rkt-sort"></i>
-                    </div>
-                    <div></div>
                 </div>
-                <div class="panel-body">
-                    df
-                </div>
-                <div class="panel-body">
-                    df
+                <div class="train-box js-train">
+                    <div class="train-row">
+                        <div class="train-name">Поезд</div>
+                        <div class="train-departure">
+                            Ага, вижу word-wrap делает перенос более осмысленным, а word-break тупо слово не влезает - переносит. word-wrap если видит что слово не влезет, переносит его заранее. Что касается соответствие правил переноса, правилам языка, тот тут не уверен. Но даже и без этого word-wrap, на первый взгляд, работает вполне прилично.
+                        </div>
+                        <div class="train-duration">
+                            В пути
+                        </div>
+                        <div class=" train-arrival">
+                            Прибытие
+                        </div>
+                        <div class="train-class">Класс</div>
+                        <div class="train-seats">Места</div>
+                        <div class="train-price">
+                            от 150 580.90 RUB
+                        </div>
+                        <div class="train-policy">
+                            <div class="policy recommended"></div>
+                        </div>
+                        <div class="train-buttons">
+                            <a href="choose-carriage" class="btn btn-white">Выбрать</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
