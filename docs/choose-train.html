@@ -101,61 +101,146 @@
             </div>
         </div>
         <div class="container rail-container">
-            <div class="panel panel-default rail-choose-train">
+            <div class="panel panel-default train-choose">
                 <div class="panel-heading">
                     <h2>Шаг 1 из 3. Выберите поезд</h2>
                     <span class="text-muted">Доступно 25 вариантов</span>
                 </div>
-                <div class="train-box  train-header">
-                    <div class="train-row">
-                        <div class="train-name">Поезд</div>
-                        <div class="sortable train-departure">
-                            Отправление
-                            <i aria-hidden="true" class="fa rkt-sort"></i>
-                        </div>
-                        <div class="sortable train-duration">
-                            В пути
-                            <i aria-hidden="true" class="fa rkt-sort"></i>
-                        </div>
-                        <div class="sortable train-arrival">
-                            Прибытие
-                            <i aria-hidden="true" class="fa rkt-sort"></i>
-                        </div>
-                        <div class="train-class">Класс</div>
-                        <div class="train-seats">Места</div>
-                        <div class="sortable train-price">
-                            Стоимость
-                            <i aria-hidden="true" class="fa rkt-sort"></i>
-                        </div>
-                        <div class="train-policy">f</div>
-                        <div class="train-buttons"></div>
-                    </div>
-                </div>
-                <div class="train-box js-train">
-                    <div class="train-row">
-                        <div class="train-name">Поезд</div>
-                        <div class="train-departure">
-                            Ага, вижу word-wrap делает перенос более осмысленным, а word-break тупо слово не влезает - переносит. word-wrap если видит что слово не влезет, переносит его заранее. Что касается соответствие правил переноса, правилам языка, тот тут не уверен. Но даже и без этого word-wrap, на первый взгляд, работает вполне прилично.
-                        </div>
-                        <div class="train-duration">
-                            В пути
-                        </div>
-                        <div class=" train-arrival">
-                            Прибытие
-                        </div>
-                        <div class="train-class">Класс</div>
-                        <div class="train-seats">Места</div>
-                        <div class="train-price">
-                            от 150 580.90 RUB
-                        </div>
-                        <div class="train-policy">
-                            <div class="policy recommended"></div>
-                        </div>
-                        <div class="train-buttons">
-                            <a href="choose-carriage" class="btn btn-white">Выбрать</a>
-                        </div>
-                    </div>
-                </div>
+                <table class="train-table">
+                    <thead>
+                        <tr>
+                            <th>Поезд</th>
+                            <th class="sortable">
+                                Отправление
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                В пути
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th class="sortable">
+                                Прибытие
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th>Класс</th>
+                            <th>Места</th>
+                            <th class="sortable">
+                                Стоимость
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tr class="js-train">
+                        <td class="train-name">
+                            <div class="service-block">
+                                <h2>№ 020У</h2>
+                                <div class="service active">эр</div>
+                                <div class="service">дц</div>
+                            </div>
+                            <div>&laquo;МЕГАПОЛИС&raquo;</div>
+                            <div>
+                                <a>Новосиб ГЛ &rightarrow; Адлер</a>
+                            </div>
+                            <div>фпк</div>
+                        </td>
+                        <td class="train-departure">
+                            <div>03:19 25 сен мск</div>
+                            <div class="text-muted">06:19 25 сен мест</div>
+                            <div class="text-muted">омск-пассажирский</div>
+                        </td>
+                        <td>
+                            12 ч 28м
+                        </td>
+                        <td class="train-arrival">
+                            <div>15:47 25 сен мск</div>
+                            <div class="text-muted">17:47 25 сен мест</div>
+                            <div class="text-muted">екатеринбург-пассажирский</div>
+                        </td>
+                        <td class="train-class">
+                            <div>купе</div>
+                            <div>плац</div>
+                            <div>сид</div>
+                        </td>
+                        <td class="train-seats">
+                            <div>45</div>
+                            <div>25</div>
+                            <div>55</div>
+                        </td>
+                        <td>
+                            <div class="train-price">
+                                <div>от 15 580.90 RUB</div>
+                                <div class="policy not-recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 10 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 5 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            <a class="btn btn-white">Выбрать</a>
+                        </td>
+                    </tr>
+                    <tr class="js-train">
+                        <td class="train-name">
+                            <div class="service-block">
+                                <h2>№ 020У</h2>
+                                <div class="service active">эр</div>
+                                <div class="service">дц</div>
+                            </div>
+                            <div>&laquo;МЕГАПОЛИС&raquo;</div>
+                            <div>
+                                <a>Новосиб ГЛ &rightarrow; Адлер</a>
+                            </div>
+                            <div>фпк</div>
+                        </td>
+                        <td class="train-departure">
+                            <div>03:19 25 сен мск</div>
+                            <div class="text-muted">06:19 25 сен мест</div>
+                            <div class="text-muted">омск-пассажирский</div>
+                        </td>
+                        <td>
+                            12 ч 28м
+                        </td>
+                        <td class="train-arrival">
+                            <div>15:47 25 сен мск</div>
+                            <div class="text-muted">17:47 25 сен мест</div>
+                            <div class="text-muted">екатеринбург-пассажирский</div>
+                        </td>
+                        <td class="train-class">
+                            <div>купе</div>
+                            <div>плац</div>
+                            <div>сид</div>
+                        </td>
+                        <td>
+                            <div>45</div>
+                            <div>25</div>
+                            <div>55</div>
+                        </td>
+                        <td>
+                            <div class="train-price">
+                                <div>от 15 580.90 RUB</div>
+                                <div class="policy not-recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 10 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 5 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            <a class="btn btn-white">Выбрать</a>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
         </div>
     </body>

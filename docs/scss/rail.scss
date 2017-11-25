@@ -89,68 +89,78 @@
     background-color: $brand-success;
 }
 .policy.not-recommended {
-    background-color: url("data:image/png;base64iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJAgMAAACHww4NAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAcCaWvAQAAAASSURBVAjXYwACDiTEwgARAQIAAr8ALQ2HG0MAAAAASUVORK5CYII=") no-repeat center center;
-    color: $raketa-brand-color;
+    background: url("data:image/png;base64iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJAgMAAACHww4NAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAcCaWvAQAAAASSURBVAjXYwACDiTEwgARAQIAAr8ALQ2HG0MAAAAASUVORK5CYII=") no-repeat center center;
+    background-color: #e95d0b;
 }
 
-.rail-choose-train {
+.train-table {
+    white-space: nowrap;
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+        border-bottom: 1px solid $base-Fa;
+    }
+    th, td {
+        padding: 20px 10px 20px 10px;
+    }
+    thead {
+        th {
+            text-transform: uppercase;
+            font-weight: normal;
+            padding: 10px;
+        }
+    }
+}
+
+.train-name {
+    text-transform: uppercase;
+}
+
+.train-departure {
+    text-transform: uppercase;
+}
+
+.train-arrival {
+    text-transform: uppercase;
+}
+
+.train-class {
+    text-transform: uppercase;
+}
+
+.service-block>* {
+    display: inline-block;
+}
+
+.service {
+    border-radius: 15px;
+    text-align: center;
+    width: 30px;
+    text-transform: uppercase;
+    background-color: $base-Sol;
+}
+.active {
+    background-color: #f0730f;
+    color: #fff;
+}
+
+.train-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    .policy {
+        align-self: center;
+    }
+}
+
+.train-seats div {
+    text-align: center;
+}
+
+.train-choose {
     .panel-heading {
         display: flex;
         justify-content: space-between;
         white-space: nowrap;
-    }
-    .train-box {
-        border-bottom: 1px solid $base-Fa;
-        padding: 10px 26px;
-        &:last-child {
-            border: none;
-        }
-    }
-
-    .train-row {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .train-name {
-        flex: 1 1 10%;
-    }
-
-    .train-duration {
-        margin-left: 30px;
-        flex: 0 0 10%;
-    }
-
-    .train-departure, .train-arrival {
-        margin-left: 30px;
-        flex: 1 1 30%;
-    }
-
-    .train-class, .train-seats {
-        margin-left: 30px;
-        flex: 0 0 60px;
-    }
-
-    .train-price {
-        margin-left: 30px;
-        white-space: nowrap;
-        flex: 0 0 100px;
-    }
-
-    .train-policy {
-        padding-top: 4px;
-        margin-left: 10px;
-        flex: 0 0 15px;
-    }
-
-    .train-buttons {
-        width: 20%;
-        text-align: right;
-        align-self: center;
-    }
-
-
-    .train-header {
-        text-transform: uppercase;
     }
 }
