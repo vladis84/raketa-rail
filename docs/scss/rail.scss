@@ -1,5 +1,7 @@
 @import "_variables.scss";
 
+$rail-active: #f0730f;
+
 .rail-container {
     .panel-heading, .panel-body {
         padding: 10px 20px;
@@ -12,6 +14,9 @@
     }
     .sortable:hover {
         color: $raketa-brand-color;
+    }
+    .btn {
+        cursor: pointer;
     }
 }
 
@@ -93,13 +98,29 @@
     background-color: #e95d0b;
 }
 
-.train-table {
-    white-space: nowrap;
+.rail-table {
     border-collapse: collapse;
     width: 100%;
+    white-space: nowrap;
     tr {
         border-bottom: 1px solid $base-Fa;
+
     }
+    tbody>tr {
+        &:hover {
+            & td {
+                background: #f3f4f5;
+            }
+            & .btn {
+                background-color: $rail-active;
+                color: #fff;
+            }
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+
     th, td {
         padding: 20px 10px 20px 10px;
     }
@@ -111,21 +132,16 @@
         }
     }
 }
-
-.train-name {
+.train-name, .train-departure, .train-arrival, .train-class {
     text-transform: uppercase;
 }
 
-.train-departure {
+.carriage-category {
     text-transform: uppercase;
 }
-
-.train-arrival {
-    text-transform: uppercase;
-}
-
-.train-class {
-    text-transform: uppercase;
+.carriage-category-description {
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .service-block>* {
@@ -138,9 +154,10 @@
     width: 30px;
     text-transform: uppercase;
     background-color: $base-Sol;
+    cursor: pointer;
 }
 .active {
-    background-color: #f0730f;
+    background-color: $rail-active;
     color: #fff;
 }
 
@@ -164,3 +181,41 @@
         white-space: nowrap;
     }
 }
+
+.carriage-choose {
+    .panel-heading {
+        display: flex;
+        .available-seats {
+            margin-left: auto;
+            align-self:  center;
+        }
+        white-space: nowrap;
+        .btn-group {
+            margin-left: 20px;
+        }
+    }
+}
+
+.rail-schema {
+    .seat {
+        &>path, &>rect {
+            fill: #cdcdcd;
+        }
+        &>text{
+            fill: #fff;
+        }
+    }
+    .available {
+        &>path, &>rect {
+            fill: $rail-active;
+        }
+    }
+}
+
+.carriage-schema {
+    width: 30%;
+    svg {
+        width: 100%;
+    }
+}
+

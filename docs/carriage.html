@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ракета. Центр управления поездками.</title>
+        <link rel="stylesheet" href="assets/theme_ibc-882adcb794ef41f032bc.css">
+        <link rel="stylesheet" href="assets/rail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header logo-ru">
+                <div class="information pull-right">
+                    <b>Тестов Тест Тестович:</b>
+                    <a href="/ru/auth/logout">Выход</a>
+                    <br>Компания: IBC Corporate Travel
+                    <br>Сегодня: Вторник, 21 июня 2016
+                    <br>
+                </div>
+            </div>
+            <menu class="top">
+                <div class="main has-sub-menu">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active">
+                            <a href="/ru/search"> Бронирование </a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/Company/View">Компания</a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/service">Заказы </a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/cart">
+                                Корзина </a>
+                        </li>
+                        <li class="">
+                            <a href="/ru/help/faq">
+                                Помощь </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="second-menu">
+                    <li class="item active">
+                        <a href="offersuit-index.html">Ж/Д билет</a>
+                    </li>
+                </ul>
+            </menu>
+        </div>
+        <div class="container rail-container">
+            <div class="panel panel-default rail-search-block">
+                <div class="panel-heading">
+                    <h2>Ж/Д билет</h2>
+                    <div class="button-block">
+                        <a class="btn btn-white">
+                            <i class="fa fa-"></i>
+                            Инструкция
+                        </a>
+                        <a class="btn btn-white">
+                            <i class="fa fa-"></i>
+                            Правила оформления
+                        </a>
+                    </div>
+                </div>
+                <table class="rail-table">
+                    <thead>
+                        <tr>
+                            <th>Поезд</th>
+                            <th>
+                                Отправление
+                            </th>
+                            <th>
+                                В пути
+                            </th>
+                            <th>
+                                Прибытие
+                            </th>
+                            <th>Класс</th>
+                            <th>Места</th>
+                            <th class="sortable">
+                                Стоимость
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tr class="js-train">
+                        <td class="train-name">
+                            <div class="service-block">
+                                <h2>№ 020У</h2>
+                                <div class="service active">эр</div>
+                                <div class="service">дц</div>
+                            </div>
+                            <div>&laquo;МЕГАПОЛИС&raquo;</div>
+                            <div>
+                                <a>Новосиб ГЛ &rightarrow; Адлер</a>
+                            </div>
+                            <div>фпк</div>
+                        </td>
+                        <td class="train-departure">
+                            <div>03:19 25 сен мск</div>
+                            <div class="text-muted">06:19 25 сен мест</div>
+                            <div class="text-muted">омск-пассажирский</div>
+                        </td>
+                        <td>
+                            12 ч 28м
+                        </td>
+                        <td class="train-arrival">
+                            <div>15:47 25 сен мск</div>
+                            <div class="text-muted">17:47 25 сен мест</div>
+                            <div class="text-muted">екатеринбург-пассажирский</div>
+                        </td>
+                        <td class="train-class">
+                            <div>купе</div>
+                            <div>плац</div>
+                            <div>сид</div>
+                        </td>
+                        <td class="train-seats">
+                            <div>45</div>
+                            <div>25</div>
+                            <div>55</div>
+                        </td>
+                        <td>
+                            <div class="train-price">
+                                <div>от 15 580.90 RUB</div>
+                                <div class="policy not-recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 10 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 5 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            <a class="btn btn-white" href="index.html">
+                                &cross;
+                                Отменить
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container rail-container">
+            <div class="panel panel-default carriage-choose">
+                <div class="panel-heading">
+                    <h2 class="title">Шаг 2 из 3. Выберите вагон</h2>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-white">Все</button>
+                        <button class="btn btn-white">Купе</button>
+                        <button class="btn btn-white">Платцкарт</button>
+                        <button class="btn btn-white">Сидячие</button>
+                    </div>
+                    <div class="text-muted available-seats">Доступно 10 вариантов</div>
+                </div>
+                <table class="rail-table">
+                    <thead>
+                        <tr>
+                            <th>Вагон</th>
+                            <th class="carriage-category">
+                                Тип/категория
+                            </th>
+                            <th class="sortable">
+                                Места
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th class="carriage-schema">
+                                Карта свободных мест
+                            </th>
+                            <th class="sortable">
+                                Стоимость
+                                <i aria-hidden="true" class="fa rkt-sort"></i>
+                            </th>
+                            <th>Места</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tr class="js-train">
+                        <td class="train-name">
+                            <div class="service-block">
+                                <h2>№ 10</h2>
+                                <div class="service active">эр</div>
+                                <div class="service">дц</div>
+                            </div>
+                            <div>фпк</div>
+                        </td>
+                        <td class="carriage-category">
+                            <div class="service-block">
+                                <h2>Купе</h2>
+                                <div
+                                    class="service"
+                                    title=" В вагоне есть места для пассажиров с мелкими домашними животными"
+                                >
+                                    2л
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <div>25 верхних</div>
+                            <div>12 нижних</div>
+                        </td>
+                        <td class="carriage-schema">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 570 71.64" class="rail-schema">
+                                <defs>
+    <style>
+      .FPK_2_4_V1cls-1 {
+        fill: none;
+      }
+
+      .FPK_2_4_V1cls-2, .FPK_2_4_V1cls-4 {
+        fill: #e9e9e9;
+      }
+
+      .FPK_2_4_V1cls-3, .FPK_2_4_V1cls-6 {
+        fill: #8e8e8e;
+      }
+
+      .FPK_2_4_V1cls-3, .FPK_2_4_V1cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .FPK_2_4_V1cls-5 {
+        clip-path: url(#FPK_2_4_V1clip-path);
+      }
+
+      .FPK_2_4_V1cls-7 {
+        fill: #fff;
+      }
+
+      .FPK_2_4_V1cls-8 {
+        clip-path: url(#FPK_2_4_V1clip-path-3);
+      }
+
+      .FPK_2_4_V1cls-9 {
+        clip-path: url(#FPK_2_4_V1clip-path-5);
+      }
+
+      .FPK_2_4_V1cls-10 {
+        clip-path: url(#FPK_2_4_V1clip-path-7);
+      }
+
+      .FPK_2_4_V1cls-11 {
+        clip-path: url(#FPK_2_4_V1clip-path-9);
+      }
+
+      .FPK_2_4_V1cls-12 {
+        clip-path: url(#FPK_2_4_V1clip-path-11);
+      }
+
+      .FPK_2_4_V1cls-13 {
+        fill: #ccc;
+      }
+
+      .FPK_2_4_V1cls-14 {
+        fill: #3eafe8;
+      }
+
+      .FPK_2_4_V1cls-15 {
+        font-size: 10px;
+        font-family: Roboto;
+      }
+    </style>
+    <clipPath id="FPK_2_4_V1clip-path" transform="translate(0 0)">
+      <rect class="FPK_2_4_V1cls-1" width="570" height="71.64"></rect>
+    </clipPath>
+    <clipPath id="FPK_2_4_V1clip-path-3" transform="translate(0 0)">
+      <rect class="FPK_2_4_V1cls-1" x="529.21" y="12.72" width="12" height="5.93"></rect>
+    </clipPath>
+    <clipPath id="FPK_2_4_V1clip-path-5" transform="translate(0 0)">
+      <rect class="FPK_2_4_V1cls-1" x="532.49" y="52.15" width="7.44" height="10.25"></rect>
+    </clipPath>
+    <clipPath id="FPK_2_4_V1clip-path-7" transform="translate(0 0)">
+      <rect class="FPK_2_4_V1cls-1" x="28.24" y="13.89" width="12" height="5.93"></rect>
+    </clipPath>
+    <clipPath id="FPK_2_4_V1clip-path-9" transform="translate(0 0)">
+      <rect class="FPK_2_4_V1cls-1" x="29.74" y="58.66" width="9.08" height="7"></rect>
+    </clipPath>
+    <clipPath id="FPK_2_4_V1clip-path-11" transform="translate(0 0)">
+      <rect class="FPK_2_4_V1cls-1" x="53.1" y="13.82" width="8.04" height="12"></rect>
+    </clipPath>
+  <pattern id="male" width="100%" height="100%" patternUnits="objectBoundingBox" x="27%" y="20%">
+    <image xlink:href="/img/ufs/male.png" x="4" y="8" height="17" width="15"></image>
+</pattern>
+<pattern id="female" width="100%" height="100%" patternUnits="objectBoundingBox" x="27%" y="20%">
+    <image xlink:href="/img/ufs/female.png" x="4" y="8" height="17" width="15"></image>
+</pattern>
+<pattern id="mixed" width="100%" height="100%" patternUnits="objectBoundingBox" x="27%" y="10%">
+    <image xlink:href="/img/ufs/male-female.png" x="4" y="3" height="32" width="15"></image>
+</pattern>
+<pattern id="left-male" width="100%" height="100%" patternUnits="objectBoundingBox" x="-22%" y="20%">
+    <image xlink:href="/img/ufs/male.png" x="4" y="8" height="17" width="15"></image>
+</pattern>
+<pattern id="left-female" width="100%" height="100%" patternUnits="objectBoundingBox" x="-22%" y="20%">
+    <image xlink:href="/img/ufs/female.png" x="4" y="8" height="17" width="15"></image>
+</pattern>
+<pattern id="left-mixed" width="100%" height="100%" patternUnits="objectBoundingBox" x="-22%" y="10%">
+    <image xlink:href="/img/ufs/male-female.png" x="4" y="3" height="32" width="15"></image>
+</pattern>
+</defs>
+                                <g id="FPK_2_4_V1" data-name="FPK_2/4_V1">
+                                  <rect class="FPK_2_4_V1cls-2" x="523.91" y="51.97" width="0.75" height="16.85"></rect>
+                                  <polygon class="FPK_2_4_V1cls-3" points="523.91 53.62 524.66 53.62 524.66 67.17 523.91 67.17 523.91 53.62 523.91 53.62"></polygon>
+                                  <path class="FPK_2_4_V1cls-4" d="M523.66,2.07V37.81l23.25-10.42V69.55h0.75V2.07h-24Zm0.75,0.75h22.5V26.54l-22.5,10V2.82Z" transform="translate(0 0)"></path>
+                                  <g class="FPK_2_4_V1cls-5">
+                                    <g class="FPK_2_4_V1cls-5">
+                                      <path class="FPK_2_4_V1cls-4" d="M1.5,2.07h567a1.5,1.5,0,0,1,1.5,1.5v64.5a1.5,1.5,0,0,1-1.5,1.5H1.5A1.5,1.5,0,0,1,0,68.07V3.57a1.5,1.5,0,0,1,1.5-1.5m567,0.75H1.5a0.75,0.75,0,0,0-.75.75v64.5a0.75,0.75,0,0,0,.75.75h567a0.75,0.75,0,0,0,.75-0.75V3.57a0.75,0.75,0,0,0-.75-0.75" transform="translate(0 0)"></path>
+                                      <rect class="FPK_2_4_V1cls-6" y="28.32" width="0.75" height="15"></rect>
+                                      <rect class="FPK_2_4_V1cls-6" x="569.25" y="28.32" width="0.75" height="15"></rect>
+                                      <polygon class="FPK_2_4_V1cls-6" points="18.06 2.07 18.06 0.57 13.28 0.57 13.28 1.32 17.31 1.32 17.31 2.07 13.28 2.07 13.28 2.82 18.06 2.82 19.66 2.82 19.66 2.07 18.06 2.07"></polygon>
+                                      <polygon class="FPK_2_4_V1cls-6" points="6.81 2.07 6.81 1.32 11.03 1.32 11.03 0.57 6.06 0.57 6.06 2.07 4.66 2.07 4.66 2.82 6.06 2.82 11.03 2.82 11.03 2.07 6.81 2.07"></polygon>
+                                      <line class="FPK_2_4_V1cls-7" x1="13.28" y1="1.32" x2="13.28" y2="0.57"></line>
+                                      <line class="FPK_2_4_V1cls-7" x1="11.03" y1="0.57" x2="11.03" y2="1.32"></line>
+                                      <line class="FPK_2_4_V1cls-7" x1="13.28" y1="2.82" x2="13.28" y2="2.07"></line>
+                                      <line class="FPK_2_4_V1cls-7" x1="11.03" y1="2.07" x2="11.03" y2="2.82"></line>
+                                      <rect class="FPK_2_4_V1cls-7" x="11.03" width="2.25" height="5.18"></rect>
+                                      <polygon class="FPK_2_4_V1cls-6" points="12.53 3.74 12.53 0 11.78 0 11.78 3.74 11.36 3.74 12.15 5.18 12.95 3.74 12.53 3.74"></polygon>
+                                      <polygon class="FPK_2_4_V1cls-6" points="18.06 69.57 18.06 71.07 13.28 71.07 13.28 70.32 17.31 70.32 17.31 69.57 13.28 69.57 13.28 68.82 18.06 68.82 19.66 68.82 19.66 69.57 18.06 69.57"></polygon>
+                                      <polygon class="FPK_2_4_V1cls-6" points="6.81 69.57 6.81 70.32 11.03 70.32 11.03 71.07 6.06 71.07 6.06 69.57 4.66 69.57 4.66 68.82 6.06 68.82 11.03 68.82 11.03 69.57 6.81 69.57"></polygon>
+                                      <line class="FPK_2_4_V1cls-7" x1="13.28" y1="70.32" x2="13.28" y2="71.07"></line>
+                                      <line class="FPK_2_4_V1cls-7" x1="11.03" y1="71.07" x2="11.03" y2="70.32"></line>
+                                      <line class="FPK_2_4_V1cls-7" x1="13.28" y1="68.82" x2="13.28" y2="69.57"></line>
+                                      <line class="FPK_2_4_V1cls-7" x1="11.03" y1="69.57" x2="11.03" y2="68.82"></line>
+                                      <rect class="FPK_2_4_V1cls-7" x="11.03" y="66.46" width="2.25" height="5.18"></rect>
+                                      <polygon class="FPK_2_4_V1cls-6" points="12.53 67.9 12.53 71.64 11.78 71.64 11.78 67.9 11.36 67.9 12.15 66.46 12.95 67.9 12.53 67.9"></polygon>
+                                    </g>
+                                  </g>
+                                  <path class="FPK_2_4_V1cls-2" d="M70.51,52V2.07h-47v67.5H44.11V58.89L24.29,47.54v-22ZM43.36,59.32v9.5H24.29V48.4Zm26.4-56.5V50.67L44.48,36.2V2.82H69.76Zm-45.47,0H43.73v33L24.29,24.64V2.82Z" transform="translate(0 0)"></path>
+                                  <polygon class="FPK_2_4_V1cls-3" points="23.54 28.21 24.29 28.21 24.29 43.21 23.54 43.21 23.54 28.21 23.54 28.21"></polygon>
+                                  <polygon class="FPK_2_4_V1cls-3" points="546.91 31.28 547.66 31.28 547.66 46.28 546.91 46.28 546.91 31.28 546.91 31.28"></polygon>
+                                  <g class="FPK_2_4_V1cls-8">
+                                    <g class="FPK_2_4_V1cls-8">
+                                      <path class="FPK_2_4_V1cls-6" d="M534.21,16.75h0l0.82-4h1.13l-1.35,5.77h-1.07l-1.06-3.81h0l-1.06,3.81h-1.07l-1.35-5.77h1.13l0.83,3.95h0l1.08-4h0.85Zm7-.15v0a1.88,1.88,0,0,1-.57,1.48,2.28,2.28,0,0,1-1.62.55,2.25,2.25,0,0,1-1.69-.67,2.37,2.37,0,0,1-.65-1.72V15.11a2.41,2.41,0,0,1,.63-1.72,2.16,2.16,0,0,1,1.65-.67,2.39,2.39,0,0,1,1.67.55,1.88,1.88,0,0,1,.59,1.5v0h-1.12a1.26,1.26,0,0,0-.27-0.87,1.09,1.09,0,0,0-.85-0.3,1,1,0,0,0-.82.42,1.77,1.77,0,0,0-.31,1.07v1.15a1.74,1.74,0,0,0,.32,1.08,1,1,0,0,0,.87.42,1,1,0,0,0,.8-0.29,1.27,1.27,0,0,0,.26-0.87h1.12Z" transform="translate(0 0)"></path>
+                                    </g>
+                                  </g>
+                                  <g class="FPK_2_4_V1cls-9">
+                                    <g class="FPK_2_4_V1cls-9">
+                                      <path class="FPK_2_4_V1cls-6" d="M539.65,55l-4.76-2.26a0.48,0.48,0,0,0-.64.23l-0.16.34L539.72,56l0.16-.34a0.48,0.48,0,0,0-.23-0.64" transform="translate(0 0)"></path>
+                                      <path class="FPK_2_4_V1cls-6" d="M532.73,55.21a0.24,0.24,0,0,0-.18.08,0.24,0.24,0,0,0-.06.18L533,61.31a1.2,1.2,0,0,0,1.19,1.09h2.72a1.2,1.2,0,0,0,1.19-1.09L538.52,56l-1.58-.75h-4.21Z" transform="translate(0 0)"></path>
+                                      <path class="FPK_2_4_V1cls-6" d="M536.8,52.85a0.38,0.38,0,0,1,.51-0.18l0.89,0.42a0.38,0.38,0,0,1,.18.51l-0.11.23L538.71,54l0.11-.23a0.86,0.86,0,0,0-.41-1.15l-0.89-.42a0.86,0.86,0,0,0-1.15.41l-0.11.23,0.43,0.21Z" transform="translate(0 0)"></path>
+                                    </g>
+                                  </g>
+                                  <g class="FPK_2_4_V1cls-10">
+                                    <g class="FPK_2_4_V1cls-10">
+                                      <path class="FPK_2_4_V1cls-6" d="M33.24,17.93h0l0.82-4h1.13l-1.35,5.77H32.8l-1.06-3.81h0l-1.06,3.81H29.59L28.24,14h1.13l0.83,3.95h0l1.08-4h0.85Zm7-.15v0a1.88,1.88,0,0,1-.57,1.48,2.28,2.28,0,0,1-1.62.55,2.25,2.25,0,0,1-1.69-.67,2.37,2.37,0,0,1-.65-1.72V16.29a2.41,2.41,0,0,1,.63-1.72A2.16,2.16,0,0,1,38,13.89a2.39,2.39,0,0,1,1.67.55,1.88,1.88,0,0,1,.59,1.5v0H39.11a1.26,1.26,0,0,0-.27-0.87,1.09,1.09,0,0,0-.85-0.3,1,1,0,0,0-.82.42,1.77,1.77,0,0,0-.31,1.07v1.15a1.74,1.74,0,0,0,.32,1.08,1,1,0,0,0,.87.42,1,1,0,0,0,.8-0.29,1.27,1.27,0,0,0,.26-0.87h1.12Z" transform="translate(0 0)"></path>
+                                    </g>
+                                  </g>
+                                  <g class="FPK_2_4_V1cls-11">
+                                    <g class="FPK_2_4_V1cls-11">
+                                      <path class="FPK_2_4_V1cls-6" d="M37.46,59.1l-0.23,0s-0.09,0-.09-0.05V58.87A0.2,0.2,0,0,0,37,58.66H29.84a0.1,0.1,0,0,0-.11.11v2.52a3.07,3.07,0,0,0,3.07,3.07h1.28a3,3,0,0,0,2.86-2,0.09,0.09,0,0,1,.14-0.05,1.34,1.34,0,0,0,.38.06A1.36,1.36,0,0,0,38.82,61V60.46a1.36,1.36,0,0,0-1.36-1.36M38.24,61a0.78,0.78,0,0,1-.78.78,0.8,0.8,0,0,1-.24,0,0.11,0.11,0,0,1-.11-0.13,2,2,0,0,0,0-.38V59.81a0.09,0.09,0,0,1,.07-0.1,0.76,0.76,0,0,1,.24,0,0.78,0.78,0,0,1,.78.78V61Z" transform="translate(0 0)"></path>
+                                      <rect class="FPK_2_4_V1cls-6" x="30.12" y="64.76" width="6.87" height="0.9" rx="0.2" ry="0.2"></rect>
+                                    </g>
+                                  </g>
+                                  <g class="FPK_2_4_V1cls-12">
+                                    <g class="FPK_2_4_V1cls-12">
+                                      <path class="FPK_2_4_V1cls-6" d="M58.68,18.23a1.59,1.59,0,0,1,.06.43,1.62,1.62,0,1,1-3.19-.43,4.73,4.73,0,0,0,3.13,0M59,17.37a3.74,3.74,0,0,1-3.7,0,2.26,2.26,0,1,0,3.7,0" transform="translate(0 0)"></path>
+                                      <path class="FPK_2_4_V1cls-6" d="M55.13,16.39c0,0.55.89,1,2,1s2-.44,2-1a0.44,0.44,0,0,0,0-.06H55.15a0.44,0.44,0,0,0,0,.06" transform="translate(0 0)"></path>
+                                      <path class="FPK_2_4_V1cls-6" d="M55,15.74l0.06,0.21h4.08l0.06-.21,0.29-1a0.34,0.34,0,0,0,0-.27,0.35,0.35,0,0,0-.22-0.16l-1.62-.41a2.14,2.14,0,0,0-1.05,0L55,14.3a0.35,0.35,0,0,0-.25.43Z" transform="translate(0 0)"></path>
+                                      <path class="FPK_2_4_V1cls-6" d="M58.92,21.55H58.78l-1,2.49-0.29-1.46,0,0,0.23-.33a0.41,0.41,0,0,0-.33-0.64H56.86a0.41,0.41,0,0,0-.33.64l0.23,0.33,0,0L56.49,24l-1-2.49H55.32a2.22,2.22,0,0,0-2.21,2.21v2.06h8V23.76a2.22,2.22,0,0,0-2.21-2.21" transform="translate(0 0)"></path>
+                                    </g>
+                                  </g>
+                                  <g id="compartment">
+                                    <rect id="compartment_bg" class="FPK_2_4_V1cls-1" x="97.67" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame" class="FPK_2_4_V1cls-13" d="M145,3.07V51H98.64V3.07H145m1-1H97.67V52H146V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door" class="FPK_2_4_V1cls-6" x="115.13" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:2__pos:t" class="seat available " data-number="2" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="99.62" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(105.35 17.39)">2</text>
+                                    </g>
+                                    <g id="seat:1__pos:b" class="seat available " data-number="1" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M99.62,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,99.62,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(105.35 39.48)">1</text>
+                                    </g>
+                                    <g id="seat:4__pos:t" class="seat available " data-number="4" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="127.01" y="4.07" width="17" height="21" transform="translate(271.01 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(132.73 17.49)">4</text>
+                                    </g>
+                                    <g id="seat:3__pos:b" class="seat available " data-number="3" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M127,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0H127a0,0,0,0,1,0,0v-21A0,0,0,0,1,127,26.16Z" transform="translate(271.01 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(132.73 39.59)">3</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment__genderPosition:left">
+                                    <rect id="compartment_bg-2" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="69.76" y="2.07" width="28.89" height="49.9"></rect>
+                                    <path id="compartment_frame-2" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M97.67,3.07V51H70.73V3.07H97.67m1-1H69.76V52H98.64V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-2" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="71.68" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:38__pos:t" class="seat available " data-number="38" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="79.64" y="4.07" width="17" height="21" transform="translate(176.29 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(82.6 17.49)">38</text>
+                                    </g>
+                                    <g id="seat:37__pos:b" class="seat available " data-number="37" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M79.64,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,79.64,26.16Z" transform="translate(176.29 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(82.6 39.59)">37</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-2" data-name="compartment">
+                                    <rect id="compartment_bg-3" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="145.01" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-3" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M192.34,3.07V51H146V3.07h46.36m1-1H145V52h48.3V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect class="FPK_2_4_V1cls-6" x="162.46" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:6__pos:t" class="seat available " data-number="6" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="146.95" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(152.68 17.39)">6</text>
+                                    </g>
+                                    <g id="seat:5__pos:b" class="seat available " data-number="5" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M147,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4H147a0,0,0,0,1,0,0v-21A0,0,0,0,1,147,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(152.68 39.48)">5</text>
+                                    </g>
+                                    <g id="seat:8__pos:t" class="seat available " data-number="8" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="174.34" y="4.07" width="17" height="21" transform="translate(365.67 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(180.07 17.49)">8</text>
+                                    </g>
+                                    <g id="seat:7__pos:b" class="seat busy " data-number="7" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M174.34,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,174.34,26.16Z" transform="translate(365.67 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(180.07 39.59)">7</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-3" data-name="compartment">
+                                    <rect id="compartment_bg-4" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="192.34" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-4" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M239.67,3.07V51H193.31V3.07h46.36m1-1h-48.3V52h48.3V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-3" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="209.79" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:10__pos:t" class="seat available " data-number="10" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="194.28" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(197.1 17.39)">10</text>
+                                    </g>
+                                    <g id="seat:9__pos:b" class="seat available " data-number="9" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M194.28,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,194.28,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(200.01 39.48)">9</text>
+                                    </g>
+                                    <g id="seat:12__pos:t" class="seat available " data-number="12" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="221.67" y="4.07" width="17" height="21" transform="translate(460.34 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(224.63 17.49)">12</text>
+                                    </g>
+                                    <g id="seat:11__pos:b" class="seat available " data-number="11" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M221.67,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,221.67,26.16Z" transform="translate(460.34 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(224.63 39.59)">11</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-4" data-name="compartment">
+                                    <rect id="compartment_bg-5" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="239.67" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-5" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M287,3.07V51H240.64V3.07H287m1-1h-48.3V52H288V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-4" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="257.12" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:14__pos:t" class="seat available " data-number="14" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="241.61" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(244.57 17.39)">14</text>
+                                    </g>
+                                    <g id="seat:13__pos:b" class="seat available " data-number="13" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M241.61,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,241.61,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(244.57 39.48)">13</text>
+                                    </g>
+                                    <g id="seat:16__pos:t" class="seat available " data-number="16" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="269" y="4.07" width="17" height="21" transform="translate(555 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(271.96 17.49)">16</text>
+                                    </g>
+                                    <g id="seat:15__pos:b" class="seat available " data-number="15" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M269,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0H269a0,0,0,0,1,0,0v-21A0,0,0,0,1,269,26.16Z" transform="translate(555 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(271.96 39.59)">15</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-5" data-name="compartment">
+                                    <rect id="compartment_bg-6" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="287" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-6" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M334.33,3.07V51H288V3.07h46.36m1-1H287V52h48.3V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect class="FPK_2_4_V1cls-6" x="304.45" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:18__pos:t" class="seat available " data-number="18" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="288.95" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(291.9 17.39)">18</text>
+                                    </g>
+                                    <g id="seat:17__pos:b" class="seat available " data-number="17" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M288.95,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,288.95,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(291.9 39.48)">17</text>
+                                    </g>
+                                    <g id="seat:20__pos:t" class="seat available " data-number="20" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="316.33" y="4.07" width="17" height="21" transform="translate(649.66 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(319.15 17.49)">20</text>
+                                    </g>
+                                    <g id="seat:19__pos:b" class="seat available " data-number="19" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M316.33,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,316.33,26.16Z" transform="translate(649.66 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(319.29 39.59)">19</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-6" data-name="compartment">
+                                    <rect id="compartment_bg-7" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="334.33" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-7" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M381.66,3.07V51H335.3V3.07h46.36m1-1h-48.3V52h48.3V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-5" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="351.78" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:22__pos:t" class="seat available " data-number="22" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="336.28" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(339.24 17.39)">22</text>
+                                    </g>
+                                    <g id="seat:21__pos:b" class="seat available " data-number="21" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M336.28,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,336.28,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(339.24 39.48)">21</text>
+                                    </g>
+                                    <g id="seat:24__pos:t" class="seat available " data-number="24" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="363.66" y="4.07" width="17" height="21" transform="translate(744.33 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(366.62 17.49)">24</text>
+                                    </g>
+                                    <g id="seat:23__pos:b" class="seat available " data-number="23" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M363.66,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,363.66,26.16Z" transform="translate(744.33 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(366.62 39.59)">23</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-7" data-name="compartment">
+                                    <rect id="compartment_bg-8" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="381.66" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-8" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M429,3.07V51H382.63V3.07H429m1-1h-48.3V52H430V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-6" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="399.12" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:26__pos:t" class="seat available " data-number="26" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="383.61" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(386.57 17.39)">26</text>
+                                    </g>
+                                    <g id="seat:25__pos:b" class="seat available " data-number="25" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M383.61,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,383.61,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(386.57 39.48)">25</text>
+                                    </g>
+                                    <g id="seat:28__pos:t" class="seat available " data-number="28" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="411" y="4.07" width="17" height="21" transform="translate(838.99 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(413.95 17.49)">28</text>
+                                    </g>
+                                    <g id="seat:27__pos:b" class="seat available " data-number="27" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M411,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0H411a0,0,0,0,1,0,0v-21A0,0,0,0,1,411,26.16Z" transform="translate(838.99 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(413.95 39.59)">27</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-8" data-name="compartment">
+                                    <rect id="compartment_bg-9" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="429" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-9" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M476.33,3.07V51H430V3.07h46.36m1-1H429V52h48.3V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-7" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="446.45" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:30__pos:t" class="seat available " data-number="30" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="430.94" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(433.76 17.39)">30</text>
+                                    </g>
+                                    <g id="seat:29__pos:b" class="seat available " data-number="29" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M430.94,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,430.94,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(433.9 39.48)">29</text>
+                                    </g>
+                                    <g id="seat:32__pos:t" class="seat available " data-number="32" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="458.33" y="4.07" width="17" height="21" transform="translate(933.65 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(461.29 17.49)">32</text>
+                                    </g>
+                                    <g id="seat:31__pos:b" class="seat available " data-number="31" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M458.33,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,458.33,26.16Z" transform="translate(933.65 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(461.29 39.59)">31</text>
+                                    </g>
+                                  </g>
+                                  <g id="compartment-9" data-name="compartment">
+                                    <rect id="compartment_bg-10" data-name="compartment_bg" class="FPK_2_4_V1cls-1" x="476.33" y="2.07" width="48.3" height="49.9"></rect>
+                                    <path id="compartment_frame-10" data-name="compartment_frame" class="FPK_2_4_V1cls-13" d="M523.66,3.07V51H477.3V3.07h46.36m1-1h-48.3V52h48.3V2.07h0Z" transform="translate(0 0)"></path>
+                                    <rect id="compartment_door-8" data-name="compartment_door" class="FPK_2_4_V1cls-6" x="493.78" y="50.97" width="13.4" height="1"></rect>
+                                    <g id="seat:34__pos:t" class="seat available " data-number="34" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="478.27" y="3.96" width="17" height="21"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(481.23 17.39)">34</text>
+                                    </g>
+                                    <g id="seat:33__pos:b" class="seat available " data-number="33" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M478.27,26.06h17a0,0,0,0,1,0,0v17a4,4,0,0,1-4,4h-13a0,0,0,0,1,0,0v-21A0,0,0,0,1,478.27,26.06Z"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(481.23 39.48)">33</text>
+                                    </g>
+                                    <g id="seat:36__pos:t" class="seat available " data-number="36" data-powertip="Верхнее">
+                                      <rect class="FPK_2_4_V1cls-14" x="505.66" y="4.07" width="17" height="21" transform="translate(1028.32 29.14) rotate(-180)"></rect>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(508.62 17.49)">36</text>
+                                    </g>
+                                    <g id="seat:35__pos:b" class="seat available " data-number="35" data-powertip="Нижнее">
+                                      <path class="FPK_2_4_V1cls-14" d="M505.66,26.16h13a4,4,0,0,1,4,4v17a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0v-21A0,0,0,0,1,505.66,26.16Z" transform="translate(1028.32 73.33) rotate(-180)"></path>
+                                      <text class="FPK_2_4_V1cls-15" transform="translate(508.62 39.59)">35</text>
+                                    </g>
+                                  </g>
+                                </g>
+                            </svg>
+                        </td>
+                        <td>
+                            <div class="train-price">
+                                <div>от 15 580.90 RUB</div>
+                                <div class="policy not-recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 10 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                            <div class="train-price">
+                                <div>от 5 580.90 RUB</div>
+                                <div class="policy recommended"></div>
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            <a class="btn btn-white" href="passenger.html">
+                                Выбрать
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
