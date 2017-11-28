@@ -138,6 +138,7 @@ $rail-active: #f0730f;
 
 .carriage-category {
     text-transform: uppercase;
+    vertical-align: middle;
 }
 .carriage-category-description {
     white-space: normal;
@@ -164,7 +165,11 @@ $rail-active: #f0730f;
 .train-price {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
+    height: 100%;
+    div {
+        font-weight: bold;
+
+    }
     .policy {
         align-self: center;
     }
@@ -198,10 +203,11 @@ $rail-active: #f0730f;
 
 .rail-schema {
     .seat {
+        cursor: pointer;
         &>path, &>rect {
             fill: #cdcdcd;
         }
-        &>text{
+        &>text {
             fill: #fff;
         }
     }
@@ -213,7 +219,7 @@ $rail-active: #f0730f;
 }
 
 .carriage-schema {
-    width: 30%;
+    width: 40%;
     svg {
         width: 100%;
     }
