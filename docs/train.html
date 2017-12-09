@@ -58,7 +58,7 @@
                             Инструкция
                         </a>
                         <a class="btn btn-white">
-                            <i class="fa fa-"></i>
+                            <i class="fa fa-question-circle"></i>
                             Правила оформления
                         </a>
                     </div>
@@ -69,30 +69,40 @@
                             <div class="departure">
                                 <label for="departure">Откуда</label>
                                 <input type="text" name="departure" id="departure" class="form-control" value="Омск">
-                                <i class="fa rkt-exchange-h"></i>
+                                <input type="hidden" name="departure-code" id="departure-code" class="form-control" value="Омск">
+                                <i class="fa rkt-exchange-h js-swap"></i>
                             </div>
                             <div class="arrival">
                                 <label for="arrival">Куда</label>
                                 <input type="text" name="arrival" id="arrival" class="form-control" value="Екатеринбург">
+                                <input type="hidden" name="arrival-code" id="arrival-code" class="form-control" value="Омск">
                             </div>
                             <div class="departure-date">
                                 <label for="departure-date">Дата отправления</label>
                                 <input type="text" name="departure-date" id="departure-date" class="form-control picker" value="21.10.2017">
+                                <i class="fa rkt-calendar js-departure-icon"></i>
                             </div>
                             <div class="interval">
-                                <label>Интервал времени <a>отправления</a></label>
+                                <label>
+                                    Интервал времени
+                                    <a
+                                        class="js-interval-type"
+                                        data-interval-list='{"departure": "отправления", "arrival": "прибытия"}'>
+                                        отправления
+                                    </a>
+                                </label>
                                 <input type="hidden" id="interval-type" name="interval-type" value="departure">
                                 <select name="interval-start" id="interval-start" class="form-control">
-                                    <option value="">От 0 ч.</option>
+                                    <option value="0">От 0 ч.</option>
                                 </select>
                                 <select name="interval-end" id="interval-end" class="form-control">
-                                    <option value="">До 24 ч.</option>
+                                    <option value="24">До 24 ч.</option>
                                 </select>
                             </div>
                         </div>
                         <div class="text-right">
-                            <button class="btn btn-white" type="submit">
-                                <i class="fa fa-"></i>
+                            <button class="btn btn-white active" type="submit">
+                                <i class="fa fa-train"></i>
                                 Найти
                             </button>
                         </div>
@@ -110,15 +120,15 @@
                     <thead>
                         <tr>
                             <th>Поезд</th>
-                            <th class="sortable">
+                            <th class="sortable" data-sort-attribute-name="departure-utc">
                                 Отправление
                                 <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
-                            <th class="sortable">
+                            <th class="sortable" data-sort-attribute-name="arrival-utc">
                                 В пути
                                 <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
-                            <th class="sortable">
+                            <th class="sortable" data-sort-attribute-name="data-flight-time-min">
                                 Прибытие
                                 <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
@@ -130,7 +140,8 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tr class="js-train">
+                    <tbody class="js-sort-content">
+                    <tr class="js-train" data-departure-utc="111" data-arrival-utc="222" data-flight-time-min="10">
                         <td class="train-name">
                             <div class="service-block">
                                 <h2>№ 020У</h2>
@@ -184,10 +195,10 @@
                             <a class="btn btn-white" href="carriage.html">Выбрать</a>
                         </td>
                     </tr>
-                    <tr class="js-train">
+                    <tr class="js-train" data-departure-utc="222" data-arrival-utc="111" data-flight-time-min="20">
                         <td class="train-name">
                             <div class="service-block">
-                                <h2>№ 020У</h2>
+                                <h2>№ 021У</h2>
                                 <div class="service active">эр</div>
                                 <div class="service">дц</div>
                             </div>
@@ -222,15 +233,15 @@
                         </td>
                         <td>
                             <div class="train-price">
-                                <div>от 15 580.90 RUB</div>
+                                <div class="price">от 15 580.90 RUB</div>
                                 <div class="policy not-recommended"></div>
                             </div>
                             <div class="train-price">
-                                <div>от 10 580.90 RUB</div>
+                                <div class="price">от 10 580.90 RUB</div>
                                 <div class="policy recommended"></div>
                             </div>
                             <div class="train-price">
-                                <div>от 5 580.90 RUB</div>
+                                <div class="price">от 5 580.90 RUB</div>
                                 <div class="policy recommended"></div>
                             </div>
                         </td>
@@ -238,8 +249,14 @@
                             <a class="btn btn-white" href="carriage.html">Выбрать</a>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
+        <script src="assets/jquery-3.2.1.min.js"></script>
+        <script src="assets/moment-with-locales.min.js"></script>
+        <script src="assets/pikaday.js"></script>
+        <script src="js/train.js"></script>
+        <script src="js/offer-sort-train.js"></script>
     </body>
 </html>

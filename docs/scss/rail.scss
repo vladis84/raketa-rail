@@ -18,10 +18,12 @@ $rail-active: #f0730f;
     .btn {
         cursor: pointer;
     }
+    input[type=checkbox] {
+        display: inline;
+    }
 }
 
 .rail-search-block {
-
     .panel-heading {
         display: flex;
         justify-content: space-between;
@@ -62,6 +64,14 @@ $rail-active: #f0730f;
         .departure-date {
             flex: 0 1 auto;
             width: 204px;
+            position: relative;
+            .rkt-calendar {
+                position: absolute;
+                top: 35px;
+                right: 10px;
+                color: $rail-active;
+                cursor: pointer;
+            }
         }
         .interval {
             flex: 0 1 auto;
@@ -94,7 +104,6 @@ $rail-active: #f0730f;
     background-color: $brand-success;
 }
 .policy.not-recommended {
-    background: url("data:image/png;base64iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJAgMAAACHww4NAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAcCaWvAQAAAASSURBVAjXYwACDiTEwgARAQIAAr8ALQ2HG0MAAAAASUVORK5CYII=") no-repeat center center;
     background-color: #e95d0b;
 }
 
@@ -157,7 +166,7 @@ $rail-active: #f0730f;
     background-color: $base-Sol;
     cursor: pointer;
 }
-.active {
+.btn.active, .service.active {
     background-color: $rail-active;
     color: #fff;
 }
@@ -165,10 +174,9 @@ $rail-active: #f0730f;
 .train-price {
     display: flex;
     justify-content: space-between;
-    height: 100%;
-    div {
+    .price {
         font-weight: bold;
-
+        width: 80%;
     }
     .policy {
         align-self: center;
@@ -225,3 +233,9 @@ $rail-active: #f0730f;
     }
 }
 
+.passenger-fill {
+    .panel-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+}

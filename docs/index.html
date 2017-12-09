@@ -58,7 +58,7 @@
                             Инструкция
                         </a>
                         <a class="btn btn-white">
-                            <i class="fa fa-"></i>
+                            <i class="fa fa-question-circle"></i>
                             Правила оформления
                         </a>
                     </div>
@@ -68,19 +68,29 @@
                         <div class="control-block">
                             <div class="departure">
                                 <label for="departure">Откуда</label>
-                                    <input type="text" name="departure" id="departure" class="form-control" value="Омск">
-                                    <i class="fa rkt-exchange-h"></i>
+                                <input type="text" name="departure" id="departure" class="form-control" value="Омск">
+                                <input type="hidden" name="departure-code" id="departure-code" class="form-control" value="Омск">
+                                <i class="fa rkt-exchange-h js-swap"></i>
                             </div>
                             <div class="arrival">
                                 <label for="arrival">Куда</label>
                                 <input type="text" name="arrival" id="arrival" class="form-control" value="Екатеринбург">
+                                <input type="hidden" name="arrival-code" id="arrival-code" class="form-control" value="Омск">
                             </div>
                             <div class="departure-date">
                                 <label for="departure-date">Дата отправления</label>
                                 <input type="text" name="departure-date" id="departure-date" class="form-control picker" value="21.10.2017">
+                                <i class="fa rkt-calendar js-departure-icon"></i>
                             </div>
                             <div class="interval">
-                                <label>Интервал времени <a>отправления</a></label>
+                                <label>
+                                    Интервал времени
+                                    <a
+                                        class="js-interval-type"
+                                        data-interval-list='{"departure": "отправления", "arrival": "прибытия"}'>
+                                        отправления
+                                    </a>
+                                </label>
                                 <input type="hidden" id="interval-type" name="interval-type" value="departure">
                                 <select name="interval-start" id="interval-start" class="form-control">
                                     <option value="">От 0 ч.</option>
@@ -91,8 +101,8 @@
                             </div>
                         </div>
                         <div class="text-right">
-                            <button class="btn btn-white" type="submit">
-                                <i class="fa fa-"></i>
+                            <button class="btn btn-white active" type="submit">
+                                <i class="fa fa-train"></i>
                                 Найти
                             </button>
                         </div>
@@ -100,5 +110,9 @@
                 </div>
             </div>
         </div>
+        <script src="assets/jquery-3.2.1.min.js"></script>
+        <script src="assets/moment-with-locales.min.js"></script>
+        <script src="assets/pikaday.js"></script>
+        <script src="js/train.js"></script>
     </body>
 </html>
