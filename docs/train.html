@@ -119,16 +119,16 @@
                 <table class="rail-table">
                     <thead>
                         <tr>
-                            <th>Поезд</th>
-                            <th class="sortable" data-sort-attribute-name="departure-utc">
+                            <th class="train-name">Поезд</th>
+                            <th class="train-departure sortable" data-sort-attribute-name="departure-utc">
                                 Отправление
                                 <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
-                            <th class="sortable" data-sort-attribute-name="arrival-utc">
+                            <th class="sortable" data-sort-attribute-name="flight-time">
                                 В пути
                                 <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
-                            <th class="sortable" data-sort-attribute-name="data-flight-time-min">
+                            <th class="train-arrival sortable" data-sort-attribute-name="arrival-utc">
                                 Прибытие
                                 <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
@@ -141,114 +141,127 @@
                         </tr>
                     </thead>
                     <tbody class="js-sort-content">
-                    <tr class="js-train" data-departure-utc="111" data-arrival-utc="222" data-flight-time-min="10">
-                        <td class="train-name">
-                            <div class="service-block">
-                                <h2>№ 020У</h2>
-                                <div class="service active">эр</div>
-                                <div class="service">дц</div>
-                            </div>
-                            <div>&laquo;МЕГАПОЛИС&raquo;</div>
-                            <div>
-                                <a>Новосиб ГЛ &rightarrow; Адлер</a>
-                            </div>
-                            <div>фпк</div>
-                        </td>
-                        <td class="train-departure">
-                            <div>03:19 25 сен мск</div>
-                            <div class="text-muted">06:19 25 сен мест</div>
-                            <div class="text-muted">омск-пассажирский</div>
-                        </td>
-                        <td>
-                            12 ч 28м
-                        </td>
-                        <td class="train-arrival">
-                            <div>15:47 25 сен мск</div>
-                            <div class="text-muted">17:47 25 сен мест</div>
-                            <div class="text-muted">екатеринбург-пассажирский</div>
-                        </td>
-                        <td class="train-class">
-                            <div>купе</div>
-                            <div>плац</div>
-                            <div>сид</div>
-                        </td>
-                        <td class="train-seats">
-                            <div>45</div>
-                            <div>25</div>
-                            <div>55</div>
-                        </td>
-                        <td>
-                            <div class="train-price">
-                                <div>от 15 580.90 RUB</div>
-                                <div class="policy not-recommended"></div>
-                            </div>
-                            <div class="train-price">
-                                <div>от 10 580.90 RUB</div>
-                                <div class="policy recommended"></div>
-                            </div>
-                            <div class="train-price">
-                                <div>от 5 580.90 RUB</div>
-                                <div class="policy recommended"></div>
-                            </div>
-                        </td>
-                        <td class="text-right">
-                            <a class="btn btn-white" href="carriage.html">Выбрать</a>
-                        </td>
-                    </tr>
-                    <tr class="js-train" data-departure-utc="222" data-arrival-utc="111" data-flight-time-min="20">
-                        <td class="train-name">
-                            <div class="service-block">
-                                <h2>№ 021У</h2>
-                                <div class="service active">эр</div>
-                                <div class="service">дц</div>
-                            </div>
-                            <div>&laquo;МЕГАПОЛИС&raquo;</div>
-                            <div>
-                                <a>Новосиб ГЛ &rightarrow; Адлер</a>
-                            </div>
-                            <div>фпк</div>
-                        </td>
-                        <td class="train-departure">
-                            <div>03:19 25 сен мск</div>
-                            <div class="text-muted">06:19 25 сен мест</div>
-                            <div class="text-muted">омск-пассажирский</div>
-                        </td>
-                        <td>
-                            12 ч 28м
-                        </td>
-                        <td class="train-arrival">
-                            <div>15:47 25 сен мск</div>
-                            <div class="text-muted">17:47 25 сен мест</div>
-                            <div class="text-muted">екатеринбург-пассажирский</div>
-                        </td>
-                        <td class="train-class">
-                            <div>купе</div>
-                            <div>плац</div>
-                            <div>сид</div>
-                        </td>
-                        <td>
-                            <div>45</div>
-                            <div>25</div>
-                            <div>55</div>
-                        </td>
-                        <td>
-                            <div class="train-price">
-                                <div class="price">от 15 580.90 RUB</div>
-                                <div class="policy not-recommended"></div>
-                            </div>
-                            <div class="train-price">
-                                <div class="price">от 10 580.90 RUB</div>
-                                <div class="policy recommended"></div>
-                            </div>
-                            <div class="train-price">
-                                <div class="price">от 5 580.90 RUB</div>
-                                <div class="policy recommended"></div>
-                            </div>
-                        </td>
-                        <td class="text-right">
-                            <a class="btn btn-white" href="carriage.html">Выбрать</a>
-                        </td>
-                    </tr>
+
+                        <tr class="js-train" data-departure-utc="222" data-arrival-utc="111" data-flight-time="10">
+                            <td class="train-name">
+                                <div class="service-block">
+                                    <h2>№ 021У</h2>
+                                    <div class="service active">эр</div>
+                                    <div class="service">дц</div>
+                                </div>
+                                <div>&laquo;МЕГАПОЛИС&raquo;</div>
+                                <div>
+                                    <a>Новосиб ГЛ &rightarrow; Адлер</a>
+                                </div>
+                                <div>фпк</div>
+                            </td>
+                            <td class="train-departure">
+                                <div>03:19 25 сен мск</div>
+                                <div class="text-muted">06:19 25 сен мест</div>
+                                <div class="text-muted">омск-пассажирский</div>
+                            </td>
+                            <td>
+                                12 ч 28м
+                            </td>
+                            <td class="train-arrival">
+                                <div>15:47 25 сен мск</div>
+                                <div class="text-muted">17:47 25 сен мест</div>
+                                <div class="text-muted">екатеринбург-пассажирский</div>
+                            </td>
+                            <td class="train-class">
+                                <div>купе</div>
+                                <div>плац</div>
+                                <div>сид</div>
+                            </td>
+                            <td>
+                                <div>45</div>
+                                <div>25</div>
+                                <div>55</div>
+                            </td>
+                            <td>
+                                <div class="train-price">
+                                    от <div class="price">15 580,90 RUB</div>
+                                    <div class="policy">
+                                        <i class="fa rkt-policy-disallow-2"></i>
+                                    </div>
+                                </div>
+                                <div class="train-price">
+                                    от <div class="price">10 580,90 RUB</div>
+                                    <div class="policy">
+                                        <i class="fa rkt-policy-allow"></i>
+                                    </div>
+                                </div>
+                                <div class="train-price">
+                                    от <div class="price">5 580,90 RUB</div>
+                                    <div class="policy">
+                                        <i class="fa rkt-policy-allow"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-right">
+                                <a class="btn btn-white" href="carriage.html">Выбрать</a>
+                            </td>
+                        </tr>
+                        <tr class="js-train" data-departure-utc="222" data-arrival-utc="111" data-flight-time="10">
+                            <td class="train-name">
+                                <div class="service-block">
+                                    <h2>№ 021У</h2>
+                                    <div class="service active">эр</div>
+                                    <div class="service">дц</div>
+                                </div>
+                                <div>&laquo;МЕГАПОЛИС&raquo;</div>
+                                <div>
+                                    <a>Новосиб ГЛ &rightarrow; Адлер</a>
+                                </div>
+                                <div>фпк</div>
+                            </td>
+                            <td class="train-departure">
+                                <div>03:19 25 сен мск</div>
+                                <div class="text-muted">06:19 25 сен мест</div>
+                                <div class="text-muted">омск-пассажирский</div>
+                            </td>
+                            <td>
+                                12 ч 28м
+                            </td>
+                            <td class="train-arrival">
+                                <div>15:47 25 сен мск</div>
+                                <div class="text-muted">17:47 25 сен мест</div>
+                                <div class="text-muted">екатеринбург-пассажирский</div>
+                            </td>
+                            <td class="train-class">
+                                <div>купе</div>
+                                <div>плац</div>
+                                <div>сид</div>
+                            </td>
+                            <td>
+                                <div>45</div>
+                                <div>25</div>
+                                <div>55</div>
+                            </td>
+                            <td>
+                                <div class="train-price">
+                                    от <div class="price">15 580,90 RUB</div>
+                                    <div class="policy">
+                                        <i class="fa rkt-policy-disallow-2"></i>
+                                    </div>
+                                </div>
+                                <div class="train-price">
+                                    от <div class="price">10 580,90 RUB</div>
+                                    <div class="policy">
+                                        <i class="fa rkt-policy-allow"></i>
+                                    </div>
+                                </div>
+                                <div class="train-price">
+                                    от <div class="price">5 580,90 RUB</div>
+                                    <div class="policy">
+                                        <i class="fa rkt-policy-allow"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-right">
+                                <a class="btn btn-white" href="carriage.html">Выбрать</a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

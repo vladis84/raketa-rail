@@ -53,7 +53,7 @@ $(function () {
             $intervalType.val('departure');
             $(this).text(intervalTypeList.departure);
         }
-    }).click();
+    });
 });
 
 

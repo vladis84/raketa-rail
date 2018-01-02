@@ -48,7 +48,7 @@
                 </ul>
             </menu>
         </div>
-        <div class="container rail-container">
+        <div class="container rail-container rail-container-header">
             <div class="panel panel-default rail-search-block">
                 <div class="panel-heading">
                     <h2>Ж/Д билет</h2>
@@ -86,7 +86,7 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tr class="js-train">
+                    <tr>
                         <td class="train-name">
                             <div class="service-block">
                                 <h2>№ 020У</h2>
@@ -124,16 +124,22 @@
                         </td>
                         <td>
                             <div class="train-price">
-                                <div>от 15 580.90 RUB</div>
-                                <div class="policy not-recommended"></div>
+                                от <div class="price">15 580.90 RUB</div>
+                                <div class="policy">
+                                    <i class="fa rkt-policy-disallow-2"></i>
+                                </div>
                             </div>
                             <div class="train-price">
-                                <div>от 10 580.90 RUB</div>
-                                <div class="policy recommended"></div>
+                                от <div class="price">10 580.90 RUB</div>
+                                <div class="policy">
+                                    <i class="fa rkt-policy-allow"></i>
+                                </div>
                             </div>
                             <div class="train-price">
-                                <div>от 5 580.90 RUB</div>
-                                <div class="policy recommended"></div>
+                                от <div class="price">5 580.90 RUB</div>
+                                <div class="policy">
+                                    <i class="fa rkt-policy-allow"></i>
+                                </div>
                             </div>
                         </td>
                         <td class="text-right">
@@ -144,6 +150,7 @@
                         </td>
                     </tr>
                 </table>
+                <hr />
                 <table class="rail-table">
                     <thead>
                         <tr>
@@ -151,9 +158,8 @@
                             <th class="carriage-category">
                                 Тип/категория
                             </th>
-                            <th class="sortable">
+                            <th>
                                 Места
-                                <i aria-hidden="true" class="fa rkt-sort"></i>
                             </th>
                             <th class="carriage-schema">
                                 Карта свободных мест
@@ -555,15 +561,17 @@
                     </td>
                     <td>
                         <div class="train-price">
-                            от <div>15 580.90 RUB</div>
-                            <div class="policy not-recommended"></div>
+                            от <div class="price">15 580.90 RUB</div>
+                            <div class="policy">
+                                <i class="fa rkt-policy-disallow-2"></i>
+                            </div>
                         </div>
                     </td>
                     <td class="text-right">
-                        <a class="btn btn-white" href="carriage.html">
-                                &cross;
-                                Отменить
-                            </a>
+                        <a class="btn btn-white" href="passenger.html">
+                            &cross;
+                            Отменить
+                        </a>
                     </td>
                     </tr>
                 </table>

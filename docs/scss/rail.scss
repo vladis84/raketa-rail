@@ -23,6 +23,13 @@ $rail-active: #f0730f;
     }
 }
 
+.rail-container-header {
+    .rail-table {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 .rail-search-block {
     .panel-heading {
         display: flex;
@@ -100,11 +107,11 @@ $rail-active: #f0730f;
     border-radius: 50%;
 }
 
-.policy.recommended {
-    background-color: $brand-success;
+.rkt-policy-allow {
+    color: $brand-success;
 }
-.policy.not-recommended {
-    background-color: #e95d0b;
+.rkt-policy-disallow-2 {
+    color: $rail-active;
 }
 
 .rail-table {
@@ -113,7 +120,6 @@ $rail-active: #f0730f;
     white-space: nowrap;
     tr {
         border-bottom: 1px solid $base-Fa;
-
     }
     tbody>tr {
         &:hover {
@@ -131,13 +137,15 @@ $rail-active: #f0730f;
     }
 
     th, td {
-        padding: 20px 10px 20px 10px;
+        vertical-align: top;
+        padding: 30px 20px;
     }
     thead {
         th {
+            
             text-transform: uppercase;
             font-weight: normal;
-            padding: 10px;
+            padding: 20px;
         }
     }
 }
@@ -172,14 +180,17 @@ $rail-active: #f0730f;
 }
 
 .train-price {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     .price {
         font-weight: bold;
+        display: inline-block;
+        text-align: right;
         width: 80%;
     }
     .policy {
-        align-self: center;
+        position: absolute;
+        right: -15px;
+        top: 1px;
     }
 }
 
@@ -238,4 +249,13 @@ $rail-active: #f0730f;
         display: flex;
         justify-content: space-between;
     }
+}
+.btn-group .btn:focus {
+    background-color: $rail-active;
+    color: white;
+
+}
+hr {
+    margin: 0;
+    border-top: 1px solid #ccc;
 }
