@@ -229,10 +229,20 @@ $rail-active: #f0730f;
         &>text {
             fill: #fff;
         }
+        &:hover {
+            &>path, &>rect {
+                fill: #c34e0a;
+            }
+        }
     }
     .available {
         &>path, &>rect {
             fill: $rail-active;
+        }
+    }
+    .chosen {
+        &>path, &>rect {
+            fill: #2c3439;
         }
     }
 }
@@ -244,16 +254,95 @@ $rail-active: #f0730f;
     }
 }
 
-.passenger-fill {
-    .panel-heading {
-        display: flex;
-        justify-content: space-between;
+.passenger-header {
+    display: flex;
+    justify-content: space-between;
+}
+.schema-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .seat {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        &.available {
+            background-color: $rail-active;
+        }
+        &.busy {
+            background-color: #cdcdcd;
+        }
+    }
+    h3 {
+        margin: 0;
+    }
+}
+.schema-choose-header {
+    text-align: center;
+    background-color: #f8f9f9;
+    padding: 5px 0;
+    margin-bottom: 70px;
+    border-top: 1px solid #ccc;
+}
+.schema-choose-body {
+    .carriage-schema {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+.train-direction {
+    margin: 0 auto;
+    width: 40%;
+    div {
+        display: inline-block;
+        margin-right: 20px;
+
+        &:first-child {
+            color: #b0b9bf;
+        }
+        &:last-child {
+            color: #687582;
+        }
+    }
+}
+.seat-choose-params {
+    background-color: #f8f9f9;
+    display: flex;
+    justify-content: space-between;
+    div {
+        flex-basis: 200px;
+        margin-left: 20px;
+        &:first-child {
+            flex-basis: 50px;
+            align-self: center;
+        }
+    }
+    label {
+        display: block;
+    }
+    select {
+        width: 100%;
     }
 }
 .btn-group .btn:focus {
     background-color: $rail-active;
     color: white;
 
+}
+.passenger-body {
+    div {
+        display: inline-block;
+    }
+}
+.rkt-ticket {
+    font-size: 36px;
+}
+.fa-exclamation-triangle {
+    color: #dcdfe0;
+    font-size: 36px;
 }
 hr {
     margin: 0;
